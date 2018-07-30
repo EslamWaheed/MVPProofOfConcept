@@ -1,4 +1,4 @@
-package com.eslamwaheed.www.mvpproofofconcept.ui;
+package com.eslamwaheed.www.mvpproofofconcept.ui.mvpbase;
 
 import com.eslamwaheed.www.mvpproofofconcept.data.DataManager;
 
