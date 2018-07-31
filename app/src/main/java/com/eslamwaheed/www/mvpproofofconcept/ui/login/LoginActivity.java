@@ -1,5 +1,6 @@
 package com.eslamwaheed.www.mvpproofofconcept.ui.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import com.eslamwaheed.www.mvpproofofconcept.MVPApp;
 import com.eslamwaheed.www.mvpproofofconcept.R;
 import com.eslamwaheed.www.mvpproofofconcept.data.DataManager;
+import com.eslamwaheed.www.mvpproofofconcept.ui.main.MainActivity;
 import com.eslamwaheed.www.mvpproofofconcept.utils.CommonUtils;
 
 public class LoginActivity extends AppCompatActivity implements LoginMVPView {
@@ -45,7 +47,9 @@ public class LoginActivity extends AppCompatActivity implements LoginMVPView {
 
     @Override
     public void openMainActivity() {
-
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override
